@@ -1,0 +1,14 @@
+<apex:page controller="MyApex">
+<apex:form>
+    <apex:pageBlock>
+    <apex:pageBlockButtons >
+        <apex:commandButton value='Run' / >
+</apex:pageBlockButtons>
+<apex:pageBlockSection columns="1">
+    <apex:pageBlockTable Value="{!acc}" var="item" rendered="one">
+        <apex:column value="{! item.Name}"/> 
+</apex:pageBlockTable>
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:form>>
+</apex:page>
